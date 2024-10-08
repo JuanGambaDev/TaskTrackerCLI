@@ -28,8 +28,8 @@ A simple command line interface (CLI) application for tracking tasks, built in C
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/task-tracker-cli.git
-   cd task-tracker-cli
+   git clone https://github.com/JuanGambaDev/TaskTrackerCLI.git
+   cd TaskTrackerCLI
    ```
 
 2. **Set up your development environment:**
