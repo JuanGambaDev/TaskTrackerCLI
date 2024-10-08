@@ -1,11 +1,17 @@
 public class Task {
-    public Guid Id{ get; set; } = Guid.NewGuid();
+    public int Id { get; set; }
     public string Description { get; set; }
-    public Status Status { get; set; }
-    public DateTime CreatedAt { get; set; }
-    public DateTime UpdatedAt { get; set; }
+    public string Status { get; set; } 
+    public DateTime CreatedAt { get; set; } 
+    public DateTime UpdatedAt { get; set; } 
+
+    public Task(int id, string description)
+    {
+        Id = id;
+        Description = description;
+        Status = "todo";
+        CreatedAt = DateTime.Now;
+        UpdatedAt = DateTime.Now;
+    }
 }
 
-public enum Status{
-    ToDo, InProgress, Done
-}

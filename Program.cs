@@ -27,6 +27,12 @@ class Program
                     taskManager.AddTask(description);
                 }
                 break;
+
+            case "list":
+                string status = args.Length > 1 ? args[1] : null;
+                taskManager.ListTasks(status);
+                break;
+                
             default:
                 Console.WriteLine("Unknown command.");
                 break;

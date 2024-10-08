@@ -33,10 +33,24 @@ public class TaskManager {
     }
 
     public void AddTask(string description){
-        var newTask = new Task();
-        newTask.Description = description;
+        int newId = tasks.Count > 0 ? tasks[^1].Id + 1 : 1;
+        var newTask = new Task(newId, description);
         tasks.Add(newTask);
         SaveTasks();
         Console.WriteLine($"Task added successfully (ID: {newTask.Id})");
+    }
+
+    public void ListTasks(string status = null)
+    {
+        var filteredTasks = tasks;
+        if (status != null)
+        {
+            filteredTasks = tasks.FindAll(t => t.Status.Equals(status, StringComparison.OrdinalIgnoreCase));
+        }
+        
+        foreach (var task in filteredTasks)
+        {
+            Console.WriteLine($"ID: {task.Id}, Description: {task.Description}, Status: {task.Status}");
+        }
     }
 }
