@@ -1,5 +1,5 @@
 public class Task {
-    public Guid Guid{ get; set; }
+    public Guid Id{ get; set; } = Guid.NewGuid();
     public string Description { get; set; }
     public Status Status { get; set; }
     public DateTime CreatedAt { get; set; }

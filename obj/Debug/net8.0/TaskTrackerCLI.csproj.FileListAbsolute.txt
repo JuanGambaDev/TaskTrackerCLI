@@ -12,3 +12,4 @@
 /Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/TaskTrackerCLI.pdb
 /Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/TaskTrackerCLI.genruntimeconfig.cache
 /Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/ref/TaskTrackerCLI.dll
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/TaskTrackerCLI.sourcelink.json
