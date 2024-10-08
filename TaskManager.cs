@@ -55,6 +55,21 @@ public class TaskManager {
         }
     }
 
+    public void DeleteTask(int id)
+    {
+        var task = tasks.Find(t => t.Id == id);
+        if (task != null)
+        {
+            tasks.Remove(task);
+            SaveTasks();
+            Console.WriteLine($"Task {id} deleted.");
+        }
+        else
+        {
+            Console.WriteLine($"Task {id} not found.");
+        }
+    }
+
     
 
     public void ListTasks(string status = null)

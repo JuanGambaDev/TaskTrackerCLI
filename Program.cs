@@ -48,6 +48,20 @@ class Program
                 }
                 break;
 
+            case "delete":
+                if (args.Length < 2 || !int.TryParse(args[1], out int deleteId))
+                {
+                    Console.WriteLine("Please provide a valid task ID and new description.");
+                }
+                else
+                {
+                    string newDescription = string.Join(" ", args, 2, args.Length - 2);
+
+                    Console.Write($"{args.Length}");
+                    taskManager.DeleteTask(deleteId);
+                }
+                break;
+
             default:
                 Console.WriteLine("Unknown command.");
                 break;
