@@ -40,6 +40,23 @@ public class TaskManager {
         Console.WriteLine($"Task added successfully (ID: {newTask.Id})");
     }
 
+    public void UpdateTask(int id, string newDescription){
+        var task = tasks.Find(x => x.Id == id);
+        if (task != null)
+        {
+            task.Description = newDescription;
+            task.UpdatedAt = DateTime.Now;
+            SaveTasks();
+            Console.WriteLine($"Task {id} updated.");
+        }
+        else
+        {
+            Console.WriteLine($"Task {id} not found.");
+        }
+    }
+
+    
+
     public void ListTasks(string status = null)
     {
         var filteredTasks = tasks;

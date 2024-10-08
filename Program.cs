@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Serialization;
 
 class Program
 {
@@ -32,7 +33,21 @@ class Program
                 string status = args.Length > 1 ? args[1] : null;
                 taskManager.ListTasks(status);
                 break;
-                
+
+            case "update":
+                if (args.Length < 3 || !int.TryParse(args[1], out int updateId))
+                {
+                    Console.WriteLine("Please provide a valid task ID and new description.");
+                }
+                else
+                {
+                    string newDescription = string.Join(" ", args, 2, args.Length - 2);
+
+                    Console.Write($"{args.Length}");
+                    taskManager.UpdateTask(updateId, newDescription);
+                }
+                break;
+
             default:
                 Console.WriteLine("Unknown command.");
                 break;
