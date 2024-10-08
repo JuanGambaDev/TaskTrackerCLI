@@ -70,6 +70,38 @@ public class TaskManager {
         }
     }
 
+    public void MarkInProgress(int id)
+    {
+        var task = tasks.Find(t => t.Id == id);
+        if (task != null)
+        {
+            task.Status = "in-progress";
+            task.UpdatedAt = DateTime.Now;
+            SaveTasks();
+            Console.WriteLine($"Task {id} marked as in-progress.");
+        }
+        else
+        {
+            Console.WriteLine($"Task {id} not found.");
+        }
+    }
+
+    public void MarkDone(int id)
+    {
+        var task = tasks.Find(t => t.Id == id);
+        if (task != null)
+        {
+            task.Status = "done";
+            task.UpdatedAt = DateTime.Now;
+            SaveTasks();
+            Console.WriteLine($"Task {id} marked as done.");
+        }
+        else
+        {
+            Console.WriteLine($"Task {id} not found.");
+        }
+    }
+
     
 
     public void ListTasks(string status = null)

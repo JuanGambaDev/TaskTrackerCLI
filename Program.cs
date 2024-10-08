@@ -62,6 +62,28 @@ class Program
                 }
                 break;
 
+            case "mark-in-progress":
+                if (args.Length < 2 || !int.TryParse(args[1], out int inProgressId))
+                {
+                    Console.WriteLine("Please provide a valid task ID.");
+                }
+                else
+                {
+                    taskManager.MarkInProgress(inProgressId);
+                }
+                break;
+
+            case "mark-done":
+                if (args.Length < 2 || !int.TryParse(args[1], out int doneId))
+                {
+                    Console.WriteLine("Please provide a valid task ID.");
+                }
+                else
+                {
+                    taskManager.MarkDone(doneId);
+                }
+                break;
+
             default:
                 Console.WriteLine("Unknown command.");
                 break;
