@@ -1,0 +1,14 @@
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/bin/Debug/net8.0/TaskTrackerCLI
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/bin/Debug/net8.0/TaskTrackerCLI.deps.json
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/bin/Debug/net8.0/TaskTrackerCLI.runtimeconfig.json
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/bin/Debug/net8.0/TaskTrackerCLI.dll
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/bin/Debug/net8.0/TaskTrackerCLI.pdb
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/TaskTrackerCLI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/TaskTrackerCLI.AssemblyInfoInputs.cache
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/TaskTrackerCLI.AssemblyInfo.cs
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/TaskTrackerCLI.csproj.CoreCompileInputs.cache
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/TaskTrackerCLI.dll
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/refint/TaskTrackerCLI.dll
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/TaskTrackerCLI.pdb
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/TaskTrackerCLI.genruntimeconfig.cache
+/Users/sebastiangamba/dotnet/TaskTrackerCLI/obj/Debug/net8.0/ref/TaskTrackerCLI.dll
