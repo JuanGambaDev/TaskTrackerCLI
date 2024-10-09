@@ -110,6 +110,11 @@ public class TaskManager {
         if (status != null)
         {
             filteredTasks = tasks.FindAll(t => t.Status.Equals(status, StringComparison.OrdinalIgnoreCase));
+
+            if (filteredTasks.Count() == 0)
+            {
+                Console.WriteLine($"Tasks with status {status} not found");
+            }
         }
         
         foreach (var task in filteredTasks)

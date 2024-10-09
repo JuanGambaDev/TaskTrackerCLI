@@ -42,8 +42,6 @@ class Program
                 else
                 {
                     string newDescription = string.Join(" ", args, 2, args.Length - 2);
-
-                    Console.Write($"{args.Length}");
                     taskManager.UpdateTask(updateId, newDescription);
                 }
                 break;
@@ -56,8 +54,6 @@ class Program
                 else
                 {
                     string newDescription = string.Join(" ", args, 2, args.Length - 2);
-
-                    Console.Write($"{args.Length}");
                     taskManager.DeleteTask(deleteId);
                 }
                 break;

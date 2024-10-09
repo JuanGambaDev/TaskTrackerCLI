@@ -1,9 +1,37 @@
 [
   {
     "Id": 1,
-    "Description": "probando muchas cosas importantes",
+    "Description": "tender la cama",
+    "Status": "done",
+    "CreatedAt": "2024-10-08T18:53:19.100323-05:00",
+    "UpdatedAt": "2024-10-08T19:03:36.428318-05:00"
+  },
+  {
+    "Id": 3,
+    "Description": "lavar loza",
     "Status": "todo",
-    "CreatedAt": "2024-10-08T17:25:31.489712-05:00",
-    "UpdatedAt": "2024-10-08T17:56:31.534536-05:00"
+    "CreatedAt": "2024-10-08T18:53:44.760928-05:00",
+    "UpdatedAt": "2024-10-08T18:53:44.760928-05:00"
+  },
+  {
+    "Id": 4,
+    "Description": "hacer el desayuno para mi familia",
+    "Status": "todo",
+    "CreatedAt": "2024-10-08T18:54:03.21641-05:00",
+    "UpdatedAt": "2024-10-08T19:00:34.884442-05:00"
+  },
+  {
+    "Id": 5,
+    "Description": "hacer pruebas del proyecto tasktrackecli",
+    "Status": "in-progress",
+    "CreatedAt": "2024-10-08T18:54:30.68539-05:00",
+    "UpdatedAt": "2024-10-08T19:04:05.66564-05:00"
+  },
+  {
+    "Id": 6,
+    "Description": "poner a secar la ropa",
+    "Status": "todo",
+    "CreatedAt": "2024-10-08T18:54:54.24262-05:00",
+    "UpdatedAt": "2024-10-08T18:54:54.24262-05:00"
   }
 ]
